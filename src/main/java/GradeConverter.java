@@ -1,4 +1,3 @@
-
 public class GradeConverter {
     private static final int MAX_SCORE = 100;
     private static final int MIN_SCORE = 0;
@@ -11,8 +10,7 @@ public class GradeConverter {
     public String convert(int score) {
         if ((score > MAX_SCORE) || (score < MIN_SCORE)) {
             return "Invalid";
-        }
-        else if (score >= MIN_A_SCORE) {
+        } else if (score >= MIN_A_SCORE) {
             return "A";
         } else if (score >= MIN_B_SCORE) {
             return "B";
@@ -23,9 +21,7 @@ public class GradeConverter {
         } else if (score >= MIN_E_SCORE) {
             return "E";
         } else {
-            return "Invalid"; 
+            return "F";  // Thay vì Invalid
         }
-
-
     }
 }
